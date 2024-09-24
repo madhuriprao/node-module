@@ -5,7 +5,7 @@ export const reverseString = (str: string): string => str.split('').reverse().jo
 
 //countCharacter funtion
 export const countChar = (str:string):number => {
-return str.length;
+    return str.replace(/\s/g, '').length;  // all the \s \g are replaced with empty string.
 };
 
 //Vertical text funtion using for, of loop
